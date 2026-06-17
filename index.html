@@ -33,6 +33,26 @@
   .wrap{max-width:400px;margin:0 auto;background:var(--chat-bg);position:relative;overflow:hidden;}
   img{display:block;max-width:100%;}
 
+  /* ---- PR label ---- */
+  .prbar{background:#fff;padding:8px 14px 0;display:flex;justify-content:flex-end;}
+  .prbar span{font-size:10px;font-weight:700;color:#9aa7b4;border:1px solid var(--line);border-radius:5px;padding:2px 8px;letter-spacing:.04em;}
+
+  /* ---- intro / lead ---- */
+  .intro{background:#fff;padding:30px 22px 26px;text-align:center;}
+  .intro .kicker{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.04em;color:#fff;background:var(--coral-deep);border-radius:20px;padding:5px 13px;margin-bottom:16px;}
+  .intro h1{font-size:25px;font-weight:900;line-height:1.4;color:var(--blue-ink);letter-spacing:-.01em;}
+  .intro h1 .c{color:var(--coral-deep);}
+  .intro h1 .mk{background:linear-gradient(transparent 58%,var(--amber) 58%);padding:0 2px;}
+  .intro .read{font-size:13.5px;font-weight:600;color:var(--ink-soft);line-height:1.9;margin-top:14px;}
+  .intro .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:20px;}
+  .intro .facts .f{background:#fff;padding:13px 6px;}
+  .intro .facts .f .n{font-size:20px;font-weight:900;color:var(--coral-deep);line-height:1;}
+  .intro .facts .f .n small{font-size:11px;}
+  .intro .facts .f .l{font-size:9.5px;font-weight:700;color:var(--ink-soft);margin-top:6px;}
+  .intro .scroll-hint{margin-top:22px;font-size:11.5px;font-weight:700;color:var(--blue);display:flex;align-items:center;justify-content:center;gap:6px;}
+  .intro .scroll-hint::before{content:"";width:24px;height:1px;background:var(--line);}
+  .intro .scroll-hint::after{content:"";width:24px;height:1px;background:var(--line);}
+
   /* ---- top bar (LINE-ish) ---- */
   .bar{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#5b8ac4;color:#fff;position:sticky;top:0;z-index:25;box-shadow:0 1px 4px rgba(0,0,0,.12);}
   .bar .ava{width:34px;height:34px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.7);flex:0 0 34px;}
@@ -169,6 +189,22 @@
     </div>
     <div class="brand">Phar<i>+</i>Mate</div>
   </div>
+
+  <!-- PR LABEL -->
+  <div class="prbar"><span>PR・広告</span></div>
+
+  <!-- INTRO / LEAD -->
+  <section class="intro">
+    <span class="kicker">稼ぎたい薬剤師さんへ</span>
+    <h1>「同じ仕事なのに、<br>なんで<span class="c">手取りが倍</span>違うの…？」</h1>
+    <p class="read">正社員から<span class="mk">派遣に切り替えただけ</span>で、働く時間は減ったのに収入は増えた——。そんな薬剤師は、実は珍しくありません。これは、派遣6年目の先輩「ミナ」さんが、悩める後輩に送った<b>あるLINEのやりとり</b>です。</p>
+    <div class="facts">
+      <div class="f"><div class="n">4,000<small>円</small></div><div class="l">時給（最大）</div></div>
+      <div class="f"><div class="n">80<small>万</small></div><div class="l">最高月収</div></div>
+      <div class="f"><div class="n">0<small>円</small></div><div class="l">残業・持ち帰り</div></div>
+    </div>
+    <div class="scroll-hint">そのトークを、のぞいてみる</div>
+  </section>
 
   <!-- CHAT -->
   <section class="chat">
@@ -476,7 +512,7 @@
 
   <div class="foot">
     <p class="imgnote">※ 掲載画像はイメージです。会話はイメージです。</p>
-    <p class="disc">本ページはPhar+Mate（ファルメイト）の派遣求人を紹介するイメージページです。掲載の給与・時給・条件は一例であり、実際の求人内容とは異なる場合があります。<br>Free-life channel</p>
+    <p class="disc">本ページはアフィリエイト広告（PR）を含みます。Phar+Mate（ファルメイト）の派遣求人を紹介するイメージページです。掲載の給与・時給・条件は一例であり、実際の求人内容とは異なる場合があります。<br>Free-life channel</p>
   </div>
 
   <div class="sticky">
